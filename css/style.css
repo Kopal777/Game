@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body
+{
+    background: url("/bgg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+#myscore
+{
+    position: absolute;
+    top: 9px;
+    right: 145px;
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#highscore
+{
+    position: absolute;
+    top: 80px;
+    right: 48px;
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#board
+{
+    background: linear-gradient(rgb(110, 247, 110), rgb(248, 248, 97));
+    width: 110vmin;
+    height: 95vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(19, 1fr);
+    grid-template-columns: repeat(19, 1fr);
+
+} 
+.head
+{
+    border: 2.5px solid black;
+    background: linear-gradient( rgb(98, 0, 124), rgb(204, 100, 245) );
+    border-radius: 15px;
+}
+.snake
+{
+    border: .25vmin solid black;
+    background-color:  rgb(204, 100, 245);
+    border-radius: 40px;
+}
+.food
+{
+    background: linear-gradient(red, rgb(240, 252, 8));
+    border: 2px solid white;
+    border-radius: 80px;
+}
